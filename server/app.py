@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     return '<h1>Welcome to my page!</h1>'
 
-@app.route('/<int:username>')
+@app.route('/<string:username>')
 def user(username):
     return f'<h1>Profile for {username}</h1>'
 
